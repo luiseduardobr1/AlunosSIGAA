@@ -16,7 +16,7 @@ Gera automaticamente uma planilha com todos os nomes, matrículas e turmas dos e
 ```
 python.exe sigaa.py [NOME DO ARQUIVO].html
 ```
-**OBS**: Tanto o arquivo em python (sigaa.py) quanto a página salva do SIGAA (sigaa.html) devem estar na mesma pasta, como exemplo:
+**OBS**: Tanto o arquivo em python (sigaa.py) quanto a página salva do SIGAA (sigaa.html) devem estar na mesma pasta, como exemplo estando ambos na "Área de Trabalho":
 
 ![image](https://user-images.githubusercontent.com/56649205/73859531-f381b380-4818-11ea-8985-d283fc1938ed.png)
 
