@@ -6,7 +6,7 @@ import re,sys
 import pandas as pd
 
 nomes=['Alunos']
-matricula=['Matrícula']
+matricula=['MatrÃ­cula']
 turma=['Turma']
 combinacao=[]
 
@@ -17,9 +17,9 @@ alunos_table = soup.findAll("table", {"class" : "participantes"})[1]
 # Get students information
 for i in alunos_table.findAll("td", {"valign" : "top"}):
     nomes.append(i.find('strong').text.strip().title())
-    matricula.append(''.join(re.findall(r'Matrícula: <em>(\d+)', str(i))))
+    matricula.append(''.join(re.findall(r'MatrÃ­cula: <em>(\d+)', str(i))))
     turma.append(''.join(re.findall(r'Turma: <em>(\d*\w*)', str(i))))
-    
+
 # CSV File
 for i in range(0,len(nomes)):
     combinacao=[matricula[i],nomes[i],turma[i]]
